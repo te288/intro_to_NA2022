@@ -1,0 +1,199 @@
+<html>
+    <head>
+        <title>数値解析入門</title>
+        <!--MathJaxの設定-->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });
+          </script>
+          <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+          </script>
+          <meta http-equiv="X-UA-Compatible" CONTENT="IE=EmulateIE7" />
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    </head>
+    
+    <body class="NA_contents" style="background-color: rgb(101, 144, 173);">
+        <main style="background-color:rgb(250, 250, 250);width: 75%;padding-left: 3%;padding-right: 3%;" >
+            <!--タイトル-->
+            <h1 style="text-align: center;color: rgb(101, 144, 173);padding-top: 10px;">
+                数値解析入門
+            </h1>
+            <!--スケジュール-->
+            <h2 style="border:5px solid rgb(101, 144, 173);background-color:rgb(101, 144, 173);color:rgb(250, 250, 250);">
+                スケジュール
+            </h2>
+                各自PythonかMATLABを利用できるノートパソコンを持参のこと。環境構築が難しい場合はGoogleアカウントを作成しておけば大丈夫です。<br>
+                場所はW2-544にて実施。
+                <ul>
+                    <li>第1回：4月11日実施　常微分方程式の時間積分, 10:30-11:30</li> 
+                    <li>第2回：4月11日実施　1次元移流方程式（差分法）, 13:00-14:00</li>
+                    <li>第3回：4月12日実施　1次元拡散方程式（有限体積法）, 13:00-15:30</li>
+                    <li>第4回：4月12日実施　貯留層シミュレーション入門, 16:00-17:00</li>
+                </ul>
+
+            <!--コンテンツはじまり-->
+            <h2 style="border:5px solid rgb(101, 144, 173);background-color: rgb(101, 144, 173);color: rgb(250, 250, 250);">
+                コンテンツ
+            </h2>
+
+            <!--環境構築編-->
+            <h3 style="border-bottom: solid rgb(101, 144, 173);">
+                1.環境構築
+            </h3>
+            <ul>
+            <s>
+                <li>GoogleColab</li>
+                <li>MATLABの代わりにOctave</li>
+                <li>Fortranとgfortran</li>
+                <li>基本的なターミナル操作</li>
+            </s>
+            </ul>
+
+            <!--数値計算法-->
+            <h3 style="border-bottom: solid rgb(101, 144, 173);">
+                2.数値計算法
+            </h3>
+            <div>
+            <ul>
+                <!--
+                <li>常微分方程式の時間積分（基礎）</li>
+                <li>常微分方程式の時間積分（発展）</li>
+                <li>1次元移流方程式（差分法）</li>
+                <li>1次元拡散方程式（有限体積法）</li>
+                <li>貯留層シミュレーション入門</li>
+                -->
+                <li><a href="material/01_ODEa.pdf">常微分方程式の時間積分（基礎）</a></li>
+                <li><a href="material/01_ODEb.pdf">常微分方程式の時間積分（発展）</a></li>
+                <li><a href="material/02_Advection.pdf">1次元移流方程式（差分法）</a></li>
+                <li><a href="material/03_Diffusion.pdf">1次元拡散方程式（有限体積法）</a></li>
+                <li><a href="material/04_intro2ReservoirSim.pdf">貯留層シミュレーション入門</a></li> 
+                
+            </ul>
+            <a href="#supp_exp">資料の訂正・補足はこちら</a>
+            </div>
+
+            <!--可視化-->
+            <div style="padding-bottom: 5px;">
+            <h3 style="border-bottom: solid rgb(101, 144, 173);">
+                3.可視化
+            </h3>
+            <ul>
+                <li><a href="material/05_Gif.pdf">Gifアニメーションを作る（ImageMagick）</a></li>
+                <s>
+                <li>3次元データの可視化</li>
+                <li>コンターマップ</li>
+                </s>
+            </ul>
+            </div>
+            
+            <!--ファイル・サンプルコード-->
+            <h2 style="border:5px solid rgb(101, 144, 173);background-color: rgb(101, 144, 173);color:rgb(250, 250, 250);">サンプルコード他</h2>
+            <div style="padding-bottom: 20px;">
+                <!--小球の自由落下-->
+                <h3 style="border-bottom: solid rgb(101, 144, 173);">
+                    小球の自由落下
+                </h3>
+                         
+                <ul>
+                    演習用 
+                    <li><a href="file/小球の自由落下.xlsx">Excel</a></li>
+                    <li><a href="file/freefall.m">MATLAB</a></li>
+                    <li><a href="file/freefall.py">Python</a></li>
+                </ul>
+                
+                <ul>
+                    解答
+                    <li><a href="file/freefall_ans.py">Python</a></li>
+                    <li><a href="file/freefall_ans.m">MATLAB</a></li>
+                </ul>
+                
+
+                <!--移流方程式-->
+                <h3 style="border-bottom: solid rgb(101, 144, 173);">
+                    移流方程式
+                </h3> 
+                        
+                <ul>  
+                    演習用                    
+                    <li><a href="file/Advection_exact1D.m">1次元移流方程式・解析解（MATLAB）</a></li>
+                    <li><a href="file/Advection_exact1D.py">1次元移流方程式・解析解（Python）</a></li>
+                    <li><a href="file/Advection_upwind.m">1次元移流方程式（MATLAB）</a></li>
+                    <li><a href="file/Advection_upwind.py">1次元移流方程式（Python, .py形式）</a></li>
+                </ul> 
+                
+                <ul>
+                    解答
+                    <li><a href="file/Advection_upwind_ans.py">Python</a></li>
+                    <li><a href="file/Advection_upwind_ans.m">MATLAB</a></li>
+
+                </ul>  
+                
+
+                <!--拡散方程式-->
+                <h3 style="border-bottom: solid rgb(101, 144, 173);">
+                    拡散方程式
+                </h3>                
+                <ul>
+                    演習用・陽解法
+                    <li><a href="file/diffusion1d.py">1次元拡散方程式・陽解法（Python, .py形式）</a></li>
+                    <li><a href="file/Diffusion1D.m">1次元拡散方程式・陽解法（MATLAB）</a></li>
+                    <br>
+                    演習用・陰解法
+                    <li><a href="file/diffusion1D_imp.py">1次元拡散方程式・陰解法（Python, .py形式）</a></li>
+                </ul>
+
+                
+                <ul>
+                    解答
+                    <li><a href="file/diffusion1d_ans.py">陽解法・Python, .py</a></li>
+                    <li><a href="file/Diffusion1D_ans.m">陽解法・MATLAB</a></li>
+                    <li><a href="file/diffusion1D_imp_ans.py">陰解法・Python</a></li>
+                </ul>
+                                           
+
+            </div>
+
+            <!--補足はじまり-->
+            <h2 style="border:5px solid rgb(101, 144, 173);background-color: rgb(101, 144, 173);color: rgb(250, 250, 250);">
+                雑記
+            </h2>
+            終了後に気づいたことを書いておきます。
+                <!--進め方について-->
+                <div style="padding-bottom: 5px;">
+                    <h3 style="border-bottom: solid rgb(101, 144, 173);">
+                        事前準備
+                    </h3>
+                    <ul>
+                        <li>説明を始める前に、各自のプログラミング環境を確認すべきだった。</li>
+                        <li>URLを変更して解答をダウンロードする方法は上手くいかない場合もある（原因不明）</li>
+                    </ul>
+
+                <!--進め方について-->
+                <div style="padding-bottom: 5px;">
+                    <h3 style="border-bottom: solid rgb(101, 144, 173);">
+                        進め方
+                    </h3>
+                    <ul>
+                        <li>2日間、計6時間程度の予定だったが、足りなかった。</li>
+                        <li>資料すべてを説明して、陰解法の演習までこなすには9時間程度必要？</li>
+                        <li>アニメーション作成について、コマンドプロンプトではなく、Windows Power Shellを使った説明の方が良かったかもしれない。</li>
+                        <li>時間がなく、急遽「移流方程式→拡散方程式・陽解法→アニメーション作成」の順番に変更したが、結果としてその方が良かったと思う。</li>
+                        <li>陰解法の説明・演習を3日目にすればちょうどよかったかも。</li>
+                    </ul>
+                
+                <!--資料訂正-->
+                <div style="padding-bottom: 5px;">
+                    <h3 style="border-bottom: solid rgb(101, 144, 173);"  id="supp_exp">
+                        資料の訂正と補足
+                    </h3>
+                    <ul>
+                        <li>1次元拡散方程式の資料で"発散定理"と表記されているもは、正しくは"ストークスの定理"でした。(2022.04.08)</li>
+                        <li>3重積分が2重積分に置き換わるのが発散定理です。</li>
+                    </ul>
+
+            
+            <!--コンテンツ終わり-->
+        </main>
+        
+    </body>
+</html>
