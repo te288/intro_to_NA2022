@@ -20,10 +20,11 @@ while True:
   v_new = v_old+dt*(g-k/m*v_old) # recurrence formula
   t += dt
   i += 1
-  v_old = v_new
+
   if t > t_max:
     break
-  
+
+  v_old = v_new  
   t_hist.append(t)
   v_hist.append(v_new)
 

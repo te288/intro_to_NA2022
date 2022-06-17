@@ -22,13 +22,14 @@ while True:
   v_new = #-# Write Your Code Here #-# # V
   t = #-# Write Your Code Here #-# # t
   i = #-# Write Your Code Here #-# # i
-  v_old = #-# Write Your Code Here #-# # i
+  
   ## judgement of Time
   if t >= t_max:
     break
   
   
-  ## Add Data to lists
+  ## Add Data to lists and update v_old for next time step
+  v_old = #-# Write Your Code Here #-# # i
   t_hist.append(t)
   v_hist.append(v_new)
 
