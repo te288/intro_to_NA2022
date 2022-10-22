@@ -59,19 +59,6 @@ fig = plt.figure(figsize=(10, 6))
 # Plot Initial Condition
 PlotSavefig(x, P_new, t, L)
 while True:
-  for i in range(1, N-1): # for P[2] ~ P[N-1]
-    # alpha = #-# Write Your Code Here #-#
-    alpha = dt / (phi[i]*c[i])
-    lam_w = hmean([k[i-1], k[i]])/mu
-    lam_e = hmean([k[i+1], k[i]])/mu
-    # A = #-# Write Your Code Here #-#
-    # B = #-# Write Your Code Here #-#
-    # C = #-# Write Your Code Here #-#
-    A = lam_e * alpha / (dx**2)
-    C = lam_w * alpha / (dx**2)
-    B = 1 - A - C
-    P_new[i] = A*P_old[i-1] + B*P_old[i] + C*P_old[i+1]
-  
   # P[0]
   if BC_left == 1: # Neumann Condition
     alpha = dt / (phi[0]*c[0])
@@ -87,6 +74,20 @@ while True:
     A = lam_e * alpha / (dx**2);C = lam_w * alpha / (dx**2)
     B = 1 - A - C;
     P_new[0] = A*P_old[1] + B*P_old[0] + C*(2*Pb_left - P_old[0])    
+
+  # for P[2] ~ P[N-1]
+  for i in range(1, N-1): 
+    # alpha = #-# Write Your Code Here #-#
+    alpha = dt / (phi[i]*c[i])
+    lam_w = hmean([k[i-1], k[i]])/mu
+    lam_e = hmean([k[i+1], k[i]])/mu
+    # A = #-# Write Your Code Here #-#
+    # B = #-# Write Your Code Here #-#
+    # C = #-# Write Your Code Here #-#
+    A = lam_e * alpha / (dx**2)
+    C = lam_w * alpha / (dx**2)
+    B = 1 - A - C
+    P_new[i] = A*P_old[i-1] + B*P_old[i] + C*P_old[i+1]
   
   # P[N-1]
   if BC_right == 1: # Neumann Condition
