@@ -35,3 +35,21 @@ footer.gotohome{text-align: center;}
 ul.NA_li li{
     margin-bottom: 5px;
 }
+
+.new{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+ /*   width: 100%;
+    max-width: 384px;
+    margin: 60px auto;
+    aspect-ratio: 16/9;*/
+}
+
+.new::before{
+    content: "NEW";
+    color: white;
+    background-color: crimson;
+    
+    padding: 5px 25px;
+
+}
