@@ -45,6 +45,11 @@ ul.NA_li li{
     aspect-ratio: 16/9;*/
 }
 
+
+
+
+
+
 .new::before{
     content: "NEW";
     color: white;
