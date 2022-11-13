@@ -14703,7 +14703,7 @@ T_{w, i+\frac{1}{2}}+\frac{B_o}{B_w}T_{o, i+\frac{1}{2}}+
 式$(1)$を有限体積法で離散化すると，$i$ 番目のグリッドについて式$(5)$を得る。ただし，圧力にはSTEP1で求めた$P^{n+1}$を使用し，左辺第2項が飽和率変化に与える影響は小さいとして無視する。
 <br><br>
 $$
-S^{n+1}_{w, i}=S^{n}_{w, i}+\frac{B_w\Delta t}{V_i\phi_{i}}
+S^{n+1}_{w, i}=S^{n}_{w, i}+\frac{B_w\Delta t}{V_i\phi_{i}c_{t,i}}
 \left[
 T_{w, i-\frac{1}{2}}P^{n+1}_{i-1}
 +\left(-T_{w, i-\frac{1}{2}}-T_{w, i+\frac{1}{2}}\right)P^{n+1}_{i}+
