@@ -40,7 +40,7 @@ def cal_Ta_ans(perm_x, perm_rel_a, h, dx, dy, vis_a, FVF_a, Pressure, nx, BC_w=0
     # T_west
     for i in range(0, nx):
         if i == 0:
-            if BC_w != 0:
+            if BC_w != 1:
                 Tw = 0
                 T_west[i] = 0
             elif BC_w == 1:

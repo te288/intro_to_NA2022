@@ -46,7 +46,7 @@ def cal_Ta(perm_x, perm_rel_a, h, dx, dy, vis_a, FVF_a, Pressure, nx):
             elif Pressure[i] > Pressure[i-1]:
                 T_west[i] = #- Write Your code here -#
             else:
-                T_west[i] = (perm_rel_a[i] + perm_rel_a[i-1])/2 * Tw;
+                T_west[i] = #- Write Your code here -#
     # T_east
     for i in range(0, nx):
         if i == nx-1:
@@ -59,7 +59,7 @@ def cal_Ta(perm_x, perm_rel_a, h, dx, dy, vis_a, FVF_a, Pressure, nx):
             elif Pressure[i] > Pressure[i+1]:
                 T_east[i] = #- Write Your code here -#
             else:
-                T_east[i] = (perm_rel_a[i] + perm_rel_a[i+1])/2 * Te;
+                T_east[i] = #- Write Your code here -#
     
     # To
     T_o = T_west + T_east
