@@ -29,6 +29,7 @@
                     <li>第2回：4月11日実施　1次元移流方程式（差分法）, 13:00-14:00</li>
                     <li>第3回：4月12日実施　1次元拡散方程式（有限体積法）, 13:00-15:30</li>
                     <li>第4回：4月12日実施　貯留層シミュレーション入門, 16:00-17:00</li>
+                    <li>第5回：2月16日実施　</li>
                 </ul>
 
             <!--コンテンツはじまり-->
@@ -40,40 +41,61 @@
                     <h3>
                         2-1.環境構築
                     </h3>
+                    <!--事前に確認しておくとスムーズ-->
                     <ul>
-                        <li>GoogleColab</li>
-                        <li>MATLABの代わりにOctave</li>
+                        <li>Jupiter Notebookは使えるか？→ダメならGoolgeColab</li>
+                        <li>参加者のOSは？</li>
                         <li>Fortranとgfortran</li>
                         <li>基本的なターミナル操作</li>
                     </ul>
 
                     <!--数値計算法-->
                     <h3>
-                        2-2.数値計算法の基礎
+                        <b>基礎編<!--（目安3.5h~4h，2日間）--></b><br>
+                        2-2.数値計算法の基礎と結果の可視化
                     </h3>
                     <div>
                     <ul>
                         <!--
-                        <li>常微分方程式の時間積分（基礎）</li>
-                        <li>常微分方程式の時間積分（発展）</li>
-                        <li>1次元移流方程式（差分法）</li>
-                        <li>1次元拡散方程式（有限体積法）</li>
-                        <li>貯留層シミュレーション入門</li>
-                        -->
-                        <li><a href="materials/01_ODEa.pdf">常微分方程式の時間積分（基礎）</a></li>
-                        <li><a href="materials/01_ODEb.pdf">常微分方程式の時間積分（発展）</a></li>
-                        <li><a href="materials/02_Advection.pdf">1次元移流方程式（差分法）</a></li>
-                        <li><a href="materials/03_Diffusion.pdf">1次元拡散方程式（有限体積法），陽解法</a></li>
-                        <li><a href="materials/04_intro2ReservoirSim.pdf">貯留層解析イントロ</a></li>             
+                        常微分方程式の時間積分（発展）は飛ばしても構わない
+                    -->
+                        <li><a href="materials/01_ODEa.pdf">常微分方程式の時間積分（基礎）</a>
+                            ：演習用
+                                <a href="codes/小球の自由落下.xlsx">[excel]</a>, 
+                                <a href="codes/freefall.py">[python]</a>, 
+                                <a href="codes/freefall.m">[matlab]</a>
+                            /解答[excel], 
+                                <a href="codes/freefall_ans.py">[python]</a>,
+                                <a href="codes/freefall_ans.m">[matlab]</a>
+                        </li>
+                        <li>
+                            <a href="materials/01_ODEb.pdf">常微分方程式の時間積分（発展）</a>
+                        </li>
+                        <li><a href="materials/02_Advection.pdf">1次元移流方程式（差分法）</a>
+                            ：演習用
+                                <a href="codes/Advection_upwind.py">[python]</a>, 
+                                <a href="codes/Advection_upwind.m">[matlab]</a>
+                            /解答
+                                <a href="codes/Advection_upwind_ans.py">[python]</a>,
+                                <a href="codes/Advection_upwind_ans.m">[matlab]</a>
+                        </li>
+                        <li><a href="materials/03_Diffusion.pdf">1次元拡散方程式（陽解法・FVM）</a>
+                            ：演習用
+                            <a href="codes/diffusion1d.py">[python]</a>,
+                            <a href="codes/Diffusion1D.m">[matlab]</a>
+                            /解答
+                            <a href="codes/diffusion1d_ans.py">[python]</a>,
+                            <a href="codes/Diffusion1D_ans.m">[matlab]</a></li>
+                        <li><a href="materials/05_Gif.pdf">Gifアニメーションを作る（ImageMagick）</a></li>
+                        <!--<li><a href="materials/04_intro2ReservoirSim.pdf">貯留層解析イントロ</a></li>             -->
                     </ul>
 
 </div>
                     <!--油層シミュレーション-->
                     
                     <h3>
-                        <div class="new">
-                        <br>2-3.油層解析
-                        <div>
+                        <b>発展編<!--（目安4h~6h，2or3日間）--></b><br>
+                        2-3.陰解法と多相流解析
                     </h3>
                     <ul>
                         <li>numpy & scipy</li>
@@ -82,17 +104,21 @@
                              / 演習用<a href="Intro2ResSim/Pressure1D_Implicit.ipynb">[ipynb]</a></li>
                         <li>疎行列：説明用<a href="Intro2ResSim/SparseMatrix.html">[html]</a> / 演習用[ipynb]</li>
                         <!--<li>2次元圧力拡散方程式（陰解法）</li>-->
+                        <li>水油2相流れ：<a href="Intro2ResSim/WaterOil2PhaseFlow.pdf">[pdf]</a>, <a href="Intro2ResSim/WaterOil2PhaseFlow.pptx">[pptx]</a></li>
                         <li>相対浸透率：説明用<a href="Intro2ResSim/RelPerm.html">[html]</a>, <a href="Intro2ResSim/RelPerm.pdf">[pdf]</a> / 演習用<a href="Intro2ResSim/RelPerm.ipynb">[ipynb]</a></li>
-                        <li>関数プログラミング：<a href="Intro2ResSim/CodingWithFunctions.pdf">[pdf]</a> / <a href="Intro2ResSim/FunctionProgram/Exercise_Func.zip">[zip]</a></li>
                         <li>IMPES法（シミュレーション）
                             <ul>
-                                <li>水油2相流れ：<a href="Intro2ResSim/WaterOil2PhaseFlow.pdf">[pdf]</a>, <a href="Intro2ResSim/WaterOil2PhaseFlow.pptx">[pptx]</a></li>
                                 <li>理論とアルゴリズム：<a href="Intro2ResSim/IMPES_Method.html">[html]</a></li>
+                                <li>関数プログラミング：<a href="Intro2ResSim/CodingWithFunctions.pdf">[pdf]</a> / <a href="Intro2ResSim/FunctionProgram/Exercise_Func.zip">[zip]</a></li>
                                 <li>IMPES法実装：<a>[zip]</a></li>
                             </ul>
                         </li>
                         <li>
-                            完全陰解法ブラックオイルシミュレータ(Fully Implicit Scheme)
+                            非線形方程式/完全陰解法ブラックオイルシミュレータ
+                            <ul>
+                                <li>線形と非線形</li>
+                                <li>Newton法</li>
+                            </ul>
                         </li>
                         <li>坑井試験解析</li>
                         <ul>
@@ -104,91 +130,8 @@
                     </ul>
                 </div>
                 </div>
-            
-                    
-                   <!--可視化-->
-                    <div style="padding-bottom: 5px;">
-                    <h3>
-                        2-4.可視化
-                    </h3>
-                    <ul>
-                        <li><a href="materials/05_Gif.pdf">Gifアニメーションを作る（ImageMagick）</a></li>
-                        <s>
-                        <li>3次元データの可視化</li>
-                        <li>コンターマップ</li>
-                        </s>
-                    </ul>
-                    </div>
-                    <a href="#supp_exp" style="color: red;">資料の訂正・補足はこちら</a>
-            
-            <!--ファイル・サンプルコード-->
-            <h2 style="border-bottom: solid rgb(0, 61, 111);">
-                3. サンプルコード他
-            </h2>
-                <div style="padding-bottom: 20px;">
-                    <!--小球の自由落下-->
-                    <h3>
-                        3-1. 小球の自由落下
-                    </h3>
-                            
-                        <ul>
-                            演習用 
-                            <li><a href="codes/小球の自由落下.xlsx">Excel</a></li>
-                            <li><a href="codes/freefall.m">MATLAB</a></li>
-                            <li><a href="codes/freefall.py">Python</a></li>
-                        </ul>
-                    
-                        <ul>
-                            解答
-                            <li><a href="codes/freefall_ans.py">Python</a></li>
-                            <li><a href="codes/freefall_ans.m">MATLAB</a></li>
-                        </ul>
-                        
-
-                    <!--移流方程式-->
-                    <h3>
-                        3-2. 移流方程式
-                    </h3> 
-                            
-                    <ul>  
-                        演習用                    
-                        <li><a href="codes/Advection_exact1D.m">1次元移流方程式・解析解（MATLAB）</a></li>
-                        <li><a href="codes/Advection_exact1D.py">1次元移流方程式・解析解（Python）</a></li>
-                        <li><a href="codes/Advection_upwind.m">1次元移流方程式（MATLAB）</a></li>
-                        <li><a href="codes/Advection_upwind.py">1次元移流方程式（Python, .py形式）</a></li>
-                    </ul> 
-                    
-                    <ul>
-                        解答
-                        <li><a href="codes/Advection_upwind_ans.py">Python</a></li>
-                        <li><a href="codes/Advection_upwind_ans.m">MATLAB</a></li>
-
-                    </ul>  
-                    
-
-                    <!--拡散方程式-->
-                    <h3>
-                        3-3. 拡散方程式
-                    </h3>                
-                    <ul>
-                        演習用・陽解法
-                        <li><a href="codes/diffusion1d.py">1次元拡散方程式・陽解法（Python, .py形式）</a></li>
-                        <li><a href="codes/Diffusion1D.m">1次元拡散方程式・陽解法（MATLAB）</a></li>
-                        <br>
-                        演習用・陰解法
-                        <li><a href="codes/diffusion1D_imp.py">1次元拡散方程式・陰解法（Python, .py形式）</a></li>
-                    </ul>
-
-                    
-                    <ul>
-                        解答
-                        <li><a href="codes/diffusion1d_ans.py">陽解法・Python, .py</a></li>
-                        <li><a href="codes/Diffusion1D_ans.m">陽解法・MATLAB</a></li>
-                        <li><a href="codes/diffusion1D_imp_ans.py">陰解法・Python</a></li>
-                    </ul>
-
-
-                </div>
+            <a href="#supp_exp" style="color: red;">資料の訂正・補足はこちら</a>
+   
 
             <!--補足はじまり-->
             <h2 style="border-bottom: solid rgb(0, 61, 111);">
