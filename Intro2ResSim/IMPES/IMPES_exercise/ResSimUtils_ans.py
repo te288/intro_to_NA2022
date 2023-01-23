@@ -13,7 +13,7 @@ def cal_krw_ans(Sw, connateSw, resiSo, krw_max, nw):
 
 def cal_kro_ans(Sw, connateSw, resiSo, kro_max, no):
     # this function computes Relative Permeability of oil
-    Seff = (1-Sw - connateSw)/(1- connateSw - resiSo)
+    Seff = (1-Sw - resiSo)/(1- connateSw - resiSo)
     kro  = kro_max*((Seff)**no)
     kro[np.where( Sw <= connateSw)]  = kro_max
     kro[np.where( Sw >= (1-resiSo))] = 0
