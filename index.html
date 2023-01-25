@@ -54,40 +54,41 @@
                         <font color = "red">基礎編<!--（目安3.5h~4h，2日間）--></font><br>
                         2-2.数値計算法の基礎と結果の可視化
                     </h3>
+                    基礎編の資料をまとめたzipは<a><b><u><font color="#ff4500">こちら</font></u></b></a>
                     <div>
                         <!--
                         このセクションでは，離散化の考え方と数値解析の注意点（安定条件）がメインテーマ。実施時間の目安は目安3.5h~4hと思われる。なお，<b>常微分方程式の時間積分（発展）</b>は飛ばしても構わない。
                         -->
                     <ul>
-                        <li><a href="materials/01_ODEa.pdf">常微分方程式の時間積分（基礎）</a>
+                        <li><a href="kiso/01_ODEa.pdf">常微分方程式の時間積分（基礎）</a>
                             ：演習用
-                                <a href="codes/小球の自由落下.xlsx">[excel]</a>, 
-                                <a href="codes/freefall.py">[python]</a>, 
-                                <a href="codes/freefall.m">[matlab]</a>
+                                <a href="kiso/小球の自由落下.xlsx">[excel]</a>, 
+                                <a href="kiso/freefall.py">[python]</a>, 
+                                <a href="kiso/freefall.m">[matlab]</a>
                             /解答[excel], 
-                                <a href="codes/freefall_ans.py">[python]</a>,
-                                <a href="codes/freefall_ans.m">[matlab]</a>
+                                <a href="kiso/freefall_ans.py">[python]</a>,
+                                <a href="kiso/freefall_ans.m">[matlab]</a>
                         </li>
                         <li>
-                            <a href="materials/01_ODEb.pdf">常微分方程式の時間積分（発展）</a>
+                            <a href="kiso/01_ODEb.pdf">常微分方程式の時間積分（発展）</a>
                         </li>
-                        <li><a href="materials/02_Advection.pdf">1次元移流方程式（差分法）</a>
+                        <li><a href="kiso/02_Advection.pdf">1次元移流方程式（差分法）</a>
                             ：演習用
-                                <a href="codes/Advection_upwind.py">[python]</a>, 
-                                <a href="codes/Advection_upwind.m">[matlab]</a>
+                                <a href="kiso/Advection_upwind.py">[python]</a>, 
+                                <a href="kiso/Advection_upwind.m">[matlab]</a>
                             /解答
-                                <a href="codes/Advection_upwind_ans.py">[python]</a>,
-                                <a href="codes/Advection_upwind_ans.m">[matlab]</a>
+                                <a href="kiso/Advection_upwind_ans.py">[python]</a>,
+                                <a href="kiso/Advection_upwind_ans.m">[matlab]</a>
                         </li>
-                        <li><a href="materials/03_Diffusion.pdf">1次元拡散方程式（陽解法・FVM）</a>
+                        <li><a href="kiso/03_Diffusion.pdf">1次元拡散方程式（陽解法・FVM）</a>
                             ：演習用
-                            <a href="codes/diffusion1d.py">[python]</a>,
-                            <a href="codes/Diffusion1D.m">[matlab]</a>
+                            <a href="kiso/diffusion1d.py">[python]</a>,
+                            <a href="kiso/Diffusion1D.m">[matlab]</a>
                             /解答
-                            <a href="codes/diffusion1d_ans.py">[python]</a>,
-                            <a href="codes/Diffusion1D_ans.m">[matlab]</a></li>
-                        <li><a href="materials/05_Gif.pdf">Gifアニメーションを作る（ImageMagick）</a></li>
-                        <!--<li><a href="materials/04_intro2ReservoirSim.pdf">貯留層解析イントロ</a></li>             -->
+                            <a href="kiso/diffusion1d_ans.py">[python]</a>,
+                            <a href="kiso/Diffusion1D_ans.m">[matlab]</a></li>
+                        <li><a href="kiso/05_Gif.pdf">Gifアニメーションを作る（ImageMagick）</a></li>
+                        <!--<li><a href="kiso/04_intro2ReservoirSim.pdf">貯留層解析イントロ</a></li>             -->
                     </ul>
 
 </div>
@@ -102,48 +103,49 @@
                     IMPES法の実装までで，4h~6hは必要（Buckley-Leverettを説明するには+1.5h）と感じている。
                     また，教える側はBuckley-Leverret理論や非線形方程式ついて知識がある事が望ましいと思う。
                     -->
+                    発展編の資料をまとめたzipは<a><b><u><font color="#ff4500">こちら</font></u></b></a>
                     
                     <ul>
                         <b>2-3-1.前提知識の復習と応用的プログラミング技術</b>
                         <li>numpy & scipy</li>
                         <li>1次元圧力拡散方程式（陰解法）：
-                            説明用<a href="materials/04_Diffusion_Imp.pdf">[pdf]</a>,<a href="Intro2ResSim/Pressure1D_Implicit.html">[html]</a>
-                             / 演習用<a href="Intro2ResSim/Pressure1D_Implicit.ipynb">[ipynb]</a></li>
+                            説明用<a href="kiso/04_Diffusion_Imp.pdf">[pdf]</a>,<a href="hatten/Pressure1D_Implicit.html">[html]</a>
+                             / 演習用<a href="hatten/Pressure1D_Implicit.ipynb">[ipynb]</a></li>
                         
-                        <li>疎行列：説明用<a href="Intro2ResSim/SparseMatrix.html">[html]</a> / 演習用<a href="Intro2ResSim/SparseMatrix.ipynb">[ipynb]</a></li>
+                        <li>疎行列：説明用<a href="hatten/SparseMatrix.html">[html]</a> / 演習用<a href="hatten/SparseMatrix.ipynb">[ipynb]</a></li>
 
-                        <li>相対浸透率：説明用<a href="Intro2ResSim/RelPerm.html">[html]</a>, <a href="Intro2ResSim/RelPerm.pdf">[pdf]</a> / 演習用<a href="Intro2ResSim/RelPerm.ipynb">[ipynb]</a></li>
-                        <li>関数プログラミング：<a href="Intro2ResSim/CodingWithFunctions.pdf">[pdf]</a> / <a href="Intro2ResSim/FunctionProgram/Exercise_Func.zip">[zip]</a></li>
+                        <li>相対浸透率：説明用<a href="hatten/RelPerm.html">[html]</a>, <a href="hatten/RelPerm.pdf">[pdf]</a> / 演習用<a href="hatten/RelPerm.ipynb">[ipynb]</a></li>
+                        <li>関数プログラミング：<a href="hatten/CodingWithFunctions.pdf">[pdf]</a> / <a href="hatten/FunctionProgram/Exercise_Func.zip">[zip]</a></li>
                     </ul>
                     
                     <ul>
                         <b>2-3-2.IMPES法による水油2相流の解析</b>
-                        <li>石油開発の流れとIOR・EOR（石油工学の復習）<a href = "Intro2ResSim/OilDevelopmentFlow.pdf">[pdf]</a></li>
+                        <li>石油開発の流れとIOR・EOR（石油工学の復習）<a href = "hatten/OilDevelopmentFlow.pdf">[pdf]</a></li>
                         <li>IMPES法（シミュレーション）
                             <ul>
-                                <li>水油2相流れ：<a href="Intro2ResSim/WaterOil2PhaseFlow.pdf">[pdf]</a>, <a href="Intro2ResSim/WaterOil2PhaseFlow_Distribution.pptx">[pptx]</a>
+                                <li>水油2相流れ：<a href="hatten/WaterOil2PhaseFlow.pdf">[pdf]</a>, <a href="hatten/WaterOil2PhaseFlow_Distribution.pptx">[pptx]</a>
                                     <ul>
                                         <li>Buckeley-Leverett理論</li>
                                     </ul>
                                 </li>
                                 <li>課題設定と支配方程式の導出</li>
-                                
-                                <li>IMPES法実装：<a>[pdf]</a>,<a href="Intro2ResSim/IMPES/IMPES.zip">[zip]</a></li>
+                                <li>理論とアルゴリズム：<a href="hatten/IMPES_Method.html">[html]</a></li>
+                                <li>IMPES法実装：<a>[pdf]</a>,<a href="hatten/IMPES/IMPES.zip">[zip]</a></li>
                             </ul>
                         </li>
                         <li>実践プロジェクト，易動度に関する考察<a>[pdf]</a>,<a>[pptx](解答)</a></li>
                     </ul>    
 
-                    
+
                     <ul>
                         <b>2-3-3.まとめ</b>
-                        <li><a href="Intro2ResSim/LinearAndNonlinear.pdf">線形と非線形，Newton法</a></li>
+                        <li><a href="hatten/LinearAndNonlinear.pdf">線形と非線形，Newton法</a></li>
                         <li>地熱貯留層のシミュレーション</li>
                         <li>坑井試験解析</li>
                         <ul>
                             <li>坑井モデル</li>
-                            <li>ドローダウン試験：説明用[pdf],演習<a href="Intro2ResSim/WellTest/drawdownDataset_exercise.xlsx">[xlsx]</a></li>
-                            <li>ビルドアップ試験：説明用[pdf],演習<a href="Intro2ResSim/WellTest/PseudoData_BULogLog_exercise.xlsx">[xlsx]</a></li>
+                            <li>ドローダウン試験：説明用[pdf],演習<a href="hatten/WellTest/drawdownDataset_exercise.xlsx">[xlsx]</a></li>
+                            <li>ビルドアップ試験：説明用[pdf],演習<a href="hatten/WellTest/PseudoData_BULogLog_exercise.xlsx">[xlsx]</a></li>
                             <li>log-logプロット：説明用[pdf],演習</li>
                         </ul>
                     </ul>
