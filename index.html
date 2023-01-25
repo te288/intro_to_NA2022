@@ -102,36 +102,43 @@
                     IMPES法の実装までで，4h~6hは必要（Buckley-Leverettを説明するには+1.5h）と感じている。
                     また，教える側はBuckley-Leverret理論や非線形方程式ついて知識がある事が望ましいと思う。
                     -->
+                    
                     <ul>
+                        <b>2-3-1.前提知識の復習と応用的プログラミング技術</b>
                         <li>numpy & scipy</li>
                         <li>1次元圧力拡散方程式（陰解法）：
-                            説明用<a>[pdf]</a>,<a href="Intro2ResSim/Pressure1D_Implicit.html">[html]</a>
+                            説明用<a href="materials/04_Diffusion_Imp.pdf">[pdf]</a>,<a href="Intro2ResSim/Pressure1D_Implicit.html">[html]</a>
                              / 演習用<a href="Intro2ResSim/Pressure1D_Implicit.ipynb">[ipynb]</a></li>
+                        
                         <li>疎行列：説明用<a href="Intro2ResSim/SparseMatrix.html">[html]</a> / 演習用<a href="Intro2ResSim/SparseMatrix.ipynb">[ipynb]</a></li>
 
                         <li>相対浸透率：説明用<a href="Intro2ResSim/RelPerm.html">[html]</a>, <a href="Intro2ResSim/RelPerm.pdf">[pdf]</a> / 演習用<a href="Intro2ResSim/RelPerm.ipynb">[ipynb]</a></li>
                         <li>関数プログラミング：<a href="Intro2ResSim/CodingWithFunctions.pdf">[pdf]</a> / <a href="Intro2ResSim/FunctionProgram/Exercise_Func.zip">[zip]</a></li>
+                    </ul>
+                    
+                    <ul>
+                        <b>2-3-2.IMPES法による水油2相流の解析</b>
+                        <li>石油開発の流れとIOR・EOR（石油工学の復習）<a href = "Intro2ResSim/OilDevelopmentFlow.pdf">[pdf]</a></li>
                         <li>IMPES法（シミュレーション）
                             <ul>
-                                <li>石油開発の流れとIOR・EOR（石油工学の復習）<a href = "Intro2ResSim/OilDevelopmentFlow.pdf">[pdf]</a></li>
                                 <li>水油2相流れ：<a href="Intro2ResSim/WaterOil2PhaseFlow.pdf">[pdf]</a>, <a href="Intro2ResSim/WaterOil2PhaseFlow_Distribution.pptx">[pptx]</a>
                                     <ul>
                                         <li>Buckeley-Leverett理論</li>
                                     </ul>
                                 </li>
                                 <li>課題設定と支配方程式の導出</li>
-                                <li>理論とアルゴリズム：<a href="Intro2ResSim/IMPES_Method.html">[html]</a></li>
+                                
                                 <li>IMPES法実装：<a>[pdf]</a>,<a href="Intro2ResSim/IMPES/IMPES.zip">[zip]</a></li>
-                                <li>実践プロジェクト，易動度に関する考察<a>[pdf]</a>,<a>[pptx](解答)</a></li>
                             </ul>
                         </li>
-                        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-                        <li>
-                            非線形方程式/完全陰解法ブラックオイルシミュレータ
-                            <ul>
-                                <li><a href="Intro2ResSim/LinearAndNonlinear.pdf">線形と非線形，Newton法</a></li>
-                            </ul>
-                        </li>
+                        <li>実践プロジェクト，易動度に関する考察<a>[pdf]</a>,<a>[pptx](解答)</a></li>
+                    </ul>    
+
+                    
+                    <ul>
+                        <b>2-3-3.まとめ</b>
+                        <li><a href="Intro2ResSim/LinearAndNonlinear.pdf">線形と非線形，Newton法</a></li>
+                        <li>地熱貯留層のシミュレーション</li>
                         <li>坑井試験解析</li>
                         <ul>
                             <li>坑井モデル</li>
