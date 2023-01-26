@@ -103,10 +103,10 @@
                     IMPES法の実装までで，4h~6hは必要（Buckley-Leverettを説明するには+1.5h）と感じている。
                     また，教える側はBuckley-Leverret理論や非線形方程式ついて知識がある事が望ましいと思う。
                     -->
-                    発展編の資料をまとめたzipは<a><b><u><font color="#ff4500">こちら</font></u></b></a>
+                    <p>発展編の資料をまとめたzipは<a><b><u><font color="#ff4500">こちら</font></u></b></a></p>
                     
+                    <b>2-3-1.前提知識の復習とやや高度なプログラミング技術</b>
                     <ul>
-                        <b>2-3-1.前提知識の復習と応用的プログラミング技術</b>
                         <li>numpy & scipy</li>
                         <li>1次元圧力拡散方程式（陰解法）：
                             説明用<a href="kiso/04_Diffusion_Imp.pdf">[pdf]</a>,<a href="hatten/Pressure1D_Implicit.html">[html]</a>
@@ -118,29 +118,36 @@
                         <li>関数プログラミング：<a href="hatten/CodingWithFunctions.pdf">[pdf]</a> / <a href="hatten/FunctionProgram/Exercise_Func.zip">[zip]</a></li>
                     </ul>
                     
+                    <b>2-3-2.IMPES法による水油2相流の解析</b>
                     <ul>
-                        <b>2-3-2.IMPES法による水油2相流の解析</b>
-                        <li>石油開発の流れとIOR・EOR（石油工学の復習）<a href = "hatten/OilDevelopmentFlow.pdf">[pdf]</a></li>
-                        <li>IMPES法（シミュレーション）
+                        <li>石油開発の流れ<a href = "hatten/OilDevelopmentFlow.pdf">[pdf]</a></li>
+                        <li>IMPES法
                             <ul>
                                 <li>水油2相流れ：<a href="hatten/WaterOil2PhaseFlow.pdf">[pdf]</a>, <a href="hatten/WaterOil2PhaseFlow_Distribution.pptx">[pptx]</a>
                                     <ul>
                                         <li>Buckeley-Leverett理論</li>
                                     </ul>
                                 </li>
-                                <li>課題設定と支配方程式の導出</li>
+                                <li><a>課題設定</a>と<a>支配方程式の導出</a></li><!--引継ぎ時にはホワイトボードに書いて説明する資料を作ってる時間がない-->
                                 <li>理論とアルゴリズム：<a href="hatten/IMPES_Method.html">[html]</a></li>
-                                <li>IMPES法実装：<a>[pdf]</a>,<a href="hatten/IMPES/IMPES.zip">[zip]</a></li>
+                                <li>IMPES法実装：<s>[pdf]</s>,<a href="hatten/IMPES/IMPES.zip">[zip]</a></li>
                             </ul>
                         </li>
-                        <li>実践プロジェクト，易動度に関する考察<a>[pdf]</a>,<a>[pptx](解答)</a></li>
+                        <li>実践プロジェクト，易動度に関する考察：説明用<a href="hatten/MobilityRatio.pdf">[pdf]</a>,解答解説<a href="hatten/MobilityRatio_ans.pptx">[pptx]</a></li>
                     </ul>    
 
-
+                    <b>2-3-3.その他補足説明</b>
                     <ul>
-                        <b>2-3-3.まとめ</b>
+                        <li>誤差について</li>
+                        <p>打切り誤差，桁落ち等の誤差は数値解析において非常に重要だが，本講座ではプログラミングになれてもらう事を優先したため，解説しなかった。しかし，自ら数値解析コードを作成する際，誤差に関連した知識は
+                            <b><font color="red">必須</font></b>である。</p>
                         <li><a href="hatten/LinearAndNonlinear.pdf">線形と非線形，Newton法</a></li>
-                        <li>地熱貯留層のシミュレーション</li>
+                        <li>地熱貯留層の水蒸気二相流シミュレーション</li>
+                        <p>
+                        水と蒸気は化学式で表せばどちらもH<sub>2</sub>Oとなり，同一の物質と言える。実際の地熱貯留層でも生産・還元にともない，水が蒸気に，蒸気が水に変化することはよくある。
+                        その為，地熱貯留層の二相流解析には，質量保存則に加えて，エネルギー保存則も考慮し，流体の相状態を算出しなければならない。エネルギー保存則は温度に注目する方法と（比）エンタルピーに注目する方法がある。
+                        TOUGHは前者を実装しており，Hydrothermは後者を実装している。</p>
+                        
                         <li>坑井試験解析</li>
                         <ul>
                             <li>坑井モデル</li>
